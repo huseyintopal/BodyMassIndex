@@ -1,0 +1,18 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 01-19-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card title={cardTitle}>
+        <lightning-input label="Enter weight in Kg" type="number" onchange={onWeightChange} class="slds-p-around_medium lgc-bg"></lightning-input>
+        <lightning-input label="Enter height in meters" type="number" onchange={onHeightChange} class="slds-p-around_medium lgc-bg"></lightning-input>
+        <lightning-button label="Calculate BMI" onclick={clickHandler} class="slds-p-around_medium lgc-bg"></lightning-button>
+        <p class="slds-p-around_medium lgc-bg">
+            {result}
+        </p>
+
+    </lightning-card>
+</template>
